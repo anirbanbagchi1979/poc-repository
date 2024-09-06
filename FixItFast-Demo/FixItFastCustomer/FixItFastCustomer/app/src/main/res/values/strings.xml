@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fix-It-Fast Customer</string>
+    <string name="action_settings">Settings</string>
+    <string name="new_report">New Incident Report</string>
+    <string name="my_reports">My Reports</string>
+    <string name="incident_report">Incident Report</string>
+    <string name="new_incident_report">New Incident Report</string>
+    <string name="welcome">Fix-It-Fast Customer App</string>
+    <string name="newUser">Create your Fix-It-Fast account</string>
+
+    <!-- Strings related to login -->
+    <string name="title_activity_login">Sign In</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_email">E-mail</string>
+    <string name="prompt_firstName">First Name</string>
+    <string name="prompt_lastName">Last Name</string>
+    <string name="prompt_address">Address</string>
+    <string name="prompt_city">City</string>
+    <string name="prompt_postalCode">Postal Code</string>
+
+    <string name="action_sign_in">Sign In</string>
+    <string name="action_register">Register</string>
+    <string name="error_invalid_email">This username is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="get_notifications">Get Notifications</string>
+
+</resources>

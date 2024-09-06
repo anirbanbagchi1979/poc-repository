@@ -1,0 +1,22 @@
+<References xmlns="http://xmlns.oracle.com/adf/jndi">
+  <Reference name="FiFMBE" className="oracle.adf.model.connection.rest.RestConnection" xmlns="">
+    <Factory className="oracle.adf.model.connection.rest.RestConnectionFactory"/>
+    <RefAddresses>
+      <XmlRefAddr addrType="FiFMBE">
+        <Contents>
+          <restconnection name="FiFMBE" url="http://unit23585.oracleads.com:7778"/>
+        </Contents>
+      </XmlRefAddr>
+    </RefAddresses>
+  </Reference>
+  <Reference name="OAUTH" className="oracle.adf.model.connection.rest.RestConnection" xmlns="">
+    <Factory className="oracle.adf.model.connection.rest.RestConnectionFactory"/>
+    <RefAddresses>
+      <XmlRefAddr addrType="OAUTH">
+        <Contents>
+          <restconnection name="OAUTH" url="http://unit23584.oracleads.com:7778"/>
+        </Contents>
+      </XmlRefAddr>
+    </RefAddresses>
+  </Reference>
+</References>

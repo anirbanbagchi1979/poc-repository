@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fif_grey"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="oracle.cloud.mobile.demo.activity.MainActivity$PlaceholderFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_card"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/titleInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:imeOptions="actionNext"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/descInput"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/titleInput"
+            android:layout_marginTop="16dp"
+            android:gravity="top"
+            android:hint="Problem Description"
+            android:imeOptions="actionDone"
+            android:padding="12dp" />
+
+        <FrameLayout
+            android:id="@+id/imageFrame"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/descInput"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:background="@color/fif_grey"
+                android:scaleType="centerCrop"
+                android:src="@drawable/qual_fileother_96_full"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/instruction"
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Tap to attach a photo"
+                android:visibility="visible"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="160dp"
+            android:layout_height="64dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="Submit"
+            android:textColor="#ffffff"
+            android:visibility="visible"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</RelativeLayout>

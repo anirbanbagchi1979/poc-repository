@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'fifcustomer'
+            keyPassword 'welcome1'
+            storeFile file('/home/rbarkhouse/git/mcs_internal_samples/client/android/beta/FixItFastCustomer/keystore.jks')
+            storePassword 'welcome1'
+        }
+    }
+    compileSdkVersion 19
+    buildToolsVersion "20.0.0"
+    defaultConfig {
+        applicationId "oracle.cloud.mobile.demo.fixitfastcustomer"
+        minSdkVersion 16
+        targetSdkVersion 19
+        versionCode 1
+        versionName "1.0"
+        signingConfig signingConfigs.config
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile project(':IDMSDK')
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:19.+'
+    compile 'com.google.code.gson:gson:2.3'
+    compile 'com.android.support:support-v4:19.+'
+    compile 'com.google.android.gms:play-services:6.1.+'
+}

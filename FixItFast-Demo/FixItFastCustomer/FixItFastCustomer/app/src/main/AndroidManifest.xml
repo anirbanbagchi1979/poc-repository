@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="oracle.cloud.mobile.demo.fixitfastcustomer" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver
+            android:name="oracle.cloud.mobile.notifications.McsNotificationsReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="oracle.cloud.mobile.demo.fixitfastcustomer" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activity.LoginActivity" >
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activity.LoginActivity" >
+        </activity>
+        <activity
+            android:name=".activity.NewReportActivity"
+            android:label="@string/new_report"
+            android:parentActivityName=".activity.MainActivity" >
+        </activity>
+        <activity
+            android:name=".activity.ReportsListActivity"
+            android:label="@string/my_reports"
+            android:parentActivityName=".activity.MainActivity" >
+        </activity>
+        <activity
+            android:name=".activity.ReportActivity"
+            android:label="@string/incident_report"
+            android:parentActivityName=".activity.ReportsListActivity" >
+        </activity>
+    </application>
+
+</manifest>

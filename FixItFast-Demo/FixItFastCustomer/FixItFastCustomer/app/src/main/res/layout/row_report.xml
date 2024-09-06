@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="4px"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:background="@drawable/background_card">
+
+    <TextView
+        android:id="@+id/idLabel"
+        style="@android:style/TextAppearance.Large"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/fif_blue"
+        android:textStyle="bold"
+        tools:text="156" />
+
+    <TextView
+        android:id="@+id/titleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/idLabel"
+        android:gravity="center_vertical"
+        tools:text="Refrigerator making rattling sound" />
+
+</RelativeLayout>

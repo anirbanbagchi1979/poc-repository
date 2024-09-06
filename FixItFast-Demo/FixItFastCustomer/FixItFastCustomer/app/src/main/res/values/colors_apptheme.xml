@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="fif_green">#168100</color>
+    <color name="fif_blue">#145c9e</color>
+    <color name="fif_dkblue">#044f91</color>
+    <color name="fif_red">#e40007</color>
+    <color name="fif_white">#f6f6f7</color>
+    <color name="fif_grey">#e2e2e5</color>
+    <color name="fif_dkgrey">#c7c7c8</color>
+
+</resources>

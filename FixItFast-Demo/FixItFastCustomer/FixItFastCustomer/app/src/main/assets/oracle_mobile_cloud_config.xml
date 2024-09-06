@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mobileBackends>
+
+    <mobileBackend>
+        <mbeName>FIF_Customer</mbeName>
+        <mbeVersion>1.0</mbeVersion>
+        <appKey>ec3fab5e-a59d-4bd6-8f5f-19d61463d2cf</appKey>
+
+        <baseUrl>http://unit23585.oracleads.com:7201</baseUrl>
+
+        <oAuthTokenEndPoint>http://unit23584.oracleads.com:7778/ms_oauth/oauth2/endpoints/oauthservice/tokens</oAuthTokenEndPoint>
+        <oAuthClientId>FIF_Customer/1.0/4feaccbb4bcba694afc31cb7935f34de</oAuthClientId>
+        <oAuthClientSecret>ef9577d2-58c6-427b-b30f-461cad366531</oAuthClientSecret>
+
+        <default>true</default>
+        <enableAnalytics>true</enableAnalytics>
+        <enableLogger>true</enableLogger>
+    </mobileBackend>
+
+    <!--
+        <mobileBackend>
+        <mbeName>FiFCustomer_999</mbeName>
+        <mbeVersion>1.0</mbeVersion>
+        <appKey>25133c10-81e4-4c64-895c-02d93369a373</appKey>
+
+        <baseUrl>http://unit23587.oracleads.com:7201</baseUrl>
+
+        <oAuthTokenEndPoint>http://unit23586.oracleads.com:7778/ms_oauth/oauth2/endpoints/oauthservice/tokens</oAuthTokenEndPoint>
+        <oAuthClientId>FiFCustomer_999/1.0/46aab15dffdadc4a4f0d976e47c5fbce</oAuthClientId>
+        <oAuthClientSecret>d00b8f3a-d000-4a77-ba20-93fad342506a</oAuthClientSecret>
+
+        <default>true</default>
+        <enableAnalytics>true</enableAnalytics>
+        <enableLogger>true</enableLogger>
+    </mobileBackend>
+    -->
+</mobileBackends>

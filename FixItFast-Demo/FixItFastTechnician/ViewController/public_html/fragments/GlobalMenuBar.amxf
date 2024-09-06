@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<amx:fragmentDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:amx="http://xmlns.oracle.com/adf/mf/amx"
+                 xmlns:dvtm="http://xmlns.oracle.com/adf/mf/amx/dvt">
+  <fragment xmlns="http://xmlns.oracle.com/adf/mf/amx/fragment" id="f1">
+    <attribute id="a1">
+      <attribute-name id="a3">username</attribute-name>
+      <attribute-type id="a2">java.lang.String</attribute-type>
+    </attribute>
+  </fragment>
+  <amx:tableLayout id="tl1" halign="end" cellSpacing="5" width="100%" shortDesc="Global Menu Table Layout"
+                   inlineStyle="padding-bottom:5px; height:40px; background-color:#e7e7e7;" layout="fixed">
+    <amx:rowLayout id="rl1">
+      <amx:cellFormat id="cf1" halign="end" valign="middle" height="25px" shortDesc="Welome message" width="80px">
+        <amx:outputText value="Welcome #{username != null? username:'anonymous'}" id="ot1"
+                        inlineStyle="white-space:nowrap; font-size:large;"/>
+      </amx:cellFormat>
+      <amx:cellFormat id="cf2" halign="end" valign="middle" height="25px" shortDesc="Exit icon" width="50px">
+        <amx:commandLink text="" id="cl1" shortDesc="Exit command" action="logout">
+          <amx:image id="i1" source="/images/application/func_arrowdoor_16_ena@2x.png" shortDesc="Exit icon"
+                     inlineStyle="width:32px; height:32px;"/>
+        </amx:commandLink>
+      </amx:cellFormat>
+    </amx:rowLayout>
+  </amx:tableLayout>
+</amx:fragmentDef>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adfmf:application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adfmf="http://xmlns.oracle.com/adf/mf"
+                   version="1.0" name="Fix-it-Fast Technician" id="com.oracle.FixItFastTechnician"
+                   appControllerFolder="ApplicationController"
+                   listener-class="oracle.mobile.cloud.sample.fif.technician.application.LifeCycleListenerImpl"
+                   vendor="Oracle Corporation ( (c) 2015)">
+  <adfmf:description>Fix-it-Fast Technician app allows service personel to browse and respond to servuce requests. The application uses Oracle Mobile Cloud Services. </adfmf:description>
+  <adfmf:featureReference refId="oracle.mobile.cloud.sample.fif.technician.ServiceRequests" id="fr1"/>
+  <adfmf:preferences>
+    <adfmf:preferenceGroup id="mcs" label="Mobile Cloud Service Settings">
+      <adfmf:preferenceText id="fifMobileBackendId" label="FIF Mobile Backend ID"
+                            default="FIF_Technician/1.0/7bacce1591fdc916dc492bea1072105d"/>
+      <adfmf:preferenceText id="fifMobileBackendName" label="FIF Mobile Backend Name" default="FIF_Technician_1.0"/>
+      <adfmf:preferenceText id="fifMobileBackendApplicationKeyAndroid"
+                            label="FiF Mobile Backend Application Key (Android)"
+                            default="83b6ab32-c472-470f-a8ec-2ca91d5f910a"/>
+      <adfmf:preferenceText label="FiF Mobile Backend Application Key (iOS)" id="fifMobileBackendApplicationKeyiOS"
+                            default="83b6ab32-c472-470f-a8ec-2ca91d5f910a"/>
+      <adfmf:preferenceText id="fifMobileBackendURL" label="FIF Mobile Backend URL"
+                            default="http://unit23585.oracleads.com:7778"/>
+    </adfmf:preferenceGroup>
+    <adfmf:preferenceGroup id="oauth" label="OAUTH Settings">
+      <adfmf:preferenceText id="oauthClientId" label="Client Id"
+                            default="FIF_Technician/1.0/7bacce1591fdc916dc492bea1072105d"/>
+      <adfmf:preferenceText id="oauthClientSecret" label="Client Secret"
+                            default="a6fe12b8-c213-4018-9edc-8553e4b4d027"/>
+      <adfmf:preferenceText id="oauthHost" label="OAUTH Host" default="http://unit23584.oracleads.com:7778"/>
+      <adfmf:preferenceText id="oauthTokenEndpointUri" label="Token Endpoint URI"
+                            default="/ms_oauth/oauth2/endpoints/oauthservice/tokens"/>
+    </adfmf:preferenceGroup>
+    <adfmf:preferenceGroup id="push" label="Push Notification Settings">
+      <adfmf:preferenceText id="gcmSenderId" label="Google Cloud Messaging Sender Id"
+                            default="&lt;Please add Sender Id>"/>
+    </adfmf:preferenceGroup>
+  </adfmf:preferences>
+  <adfmf:navigation>
+    <adfmf:navigationBar enabled="false"/>
+  </adfmf:navigation>
+  <adfmf:login/>
+</adfmf:application>
